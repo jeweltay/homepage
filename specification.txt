@@ -1,0 +1,46 @@
+HTML TAGS USED:
+1. <!DOCTYPE html> - Document type declaration for HTML5
+2. <html> - Root element of all HTML pages
+3. <head> - Container for metadata and linked resources
+4. <title> - Sets the browser tab title for each page
+5. <meta> - Defines character set and viewport for responsive design
+6. <link> - Links external CSS files (Bootstrap, Font Awesome, custom CSS)
+7. <body> - Main content container for all visible page elements
+8. <button> - Interactive elements (theme toggle, filter buttons, modal triggers)
+9. <nav> - Navigation bar container with site links
+10. <ul> - Unordered list for navigation menu items
+11. <li> - List items within navigation and project details
+12. <a> - Hyperlinks for navigation and external links
+13. <section> - Semantic section containers for organized content
+14. <div> - Division containers for layout and styling
+15. <h1> - Main heading for page titles and important sections
+16. <h2> - Secondary headings for subtitles and section headers
+17. <h3> - Tertiary headings for project titles and content subsections
+18. <p> - Paragraph elements for textual content throughout site
+19. <article> - Semantic container for project cards and independent content
+20. <img> - Image elements for hero background and sunset carousel
+21. <script> - Links external JavaScript files (Bootstrap, custom scripts)
+22. <i> - Icon elements from Font Awesome for visual indicators
+
+CSS PROPERTIES USED:
+1. font-family - Sets the site-wide typography to Arial with fallback sans-serif
+2. background-color - Defines dark/light theme backgrounds throughout the site
+3. color - Controls text color for readability in both themes
+4. margin - Creates spacing between elements and sections
+5. padding - Adds internal spacing within containers and cards
+6. border - Styles project card borders and interactive element outlines
+7. border-radius - Rounds corners of buttons, cards, and theme toggle
+8. transition - Enables smooth animations for theme changes and hover effects
+9. display - Controls layout behavior (flex for hero, block/none for project filtering)
+10. position - Positions fixed theme toggle button and absolute carousel captions
+11. text-align - Centers hero content and various text elements
+12. font-size - Establishes typographic hierarchy across different elements
+13. font-weight - Creates visual emphasis through bold and light text weights
+14. line-height - Improves text readability with appropriate spacing
+15. box-shadow - Adds depth to interactive elements on hover states
+
+BOOTSTRAP USAGE:
+I used Bootstrap 5's responsive grid system (container, row, col-*) for layout structure, navigation components for the responsive navbar, carousel component for the sunset photography gallery, modal components for project details, and utility classes for spacing and alignment to create a mobile-first, professional portfolio website.
+
+JAVASCRIPT USAGE:
+I implemented a persistent dark/light mode toggle that saves user preference in localStorage and changes the theme throughout the site, project filtering functionality that shows/hides projects based on category selection, and Bootstrap component initialization for interactive elements like modals and carousels to enhance user experience and site interactivity.

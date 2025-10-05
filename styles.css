@@ -1,0 +1,293 @@
+/* Custom CSS for Tay Yun Yi Portfolio */
+
+/* 1. TAG SELECTOR - Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #ffffff;
+    background-color: #000000;
+    transition: all 0.3s ease;
+}
+
+/* 2. CLASS SELECTOR - Split Hero section */
+.hero-split-section {
+    height: 100vh;
+    background-color: #000000;
+}
+
+.hero-photo-container {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hero-text-content {
+    padding: 2rem;
+}
+
+.hero-text-content h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+.hero-text-content h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    color: #20c997; /* Turquoise accent */
+}
+
+.hero-text-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #ffffff;
+}
+
+/* Mobile responsiveness for hero */
+@media (max-width: 768px) {
+    .hero-split-section {
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .hero-photo-container {
+        height: 50vh;
+    }
+
+    .hero-text-content {
+        padding: 3rem 1.5rem;
+        text-align: center !important;
+    }
+
+    .hero-text-content h1 {
+        font-size: 2.5rem;
+    }
+}
+
+/* 3. ID SELECTOR - Project filters */
+#project-filters {
+    margin-bottom: 2rem;
+}
+
+/* 4. ATTRIBUTE SELECTOR - Theme toggle */
+button[onclick="toggleTheme()"] {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #20c997;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    color: white;
+    font-size: 1.5rem;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+/* 5. PSEUDO-CLASS SELECTOR - Hover effects */
+.btn-custom:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(32, 201, 151, 0.3);
+}
+
+a:hover {
+    color: #20c997 !important;
+}
+
+/* Navigation */
+.navbar-dark {
+    background-color: #000000 !important;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    color: #20c997 !important;
+}
+
+/* Content sections */
+.content-section {
+    padding: 100px 0;
+}
+
+.section-dark {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.section-light {
+    background-color: #111111;
+    color: #ffffff;
+}
+
+/* Buttons */
+.btn-custom {
+    background-color: #20c997;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+/* Project cards */
+.project-card {
+    background: #111111;
+    border: 1px solid #333;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    border-color: #20c997;
+}
+
+/* Carousel */
+.carousel-caption {
+    background: rgba(0,0,0,0.7);
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+/* Filter buttons */
+.filter-btn {
+    background: #111111;
+    border: 1px solid #333;
+    color: #ffffff;
+    padding: 8px 20px;
+    margin: 0 5px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.filter-btn.active, .filter-btn:hover {
+    background: #20c997;
+    border-color: #20c997;
+}
+
+/* Light theme */
+[data-theme="light"] {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+[data-theme="light"] .section-dark {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+[data-theme="light"] .section-light {
+    background-color: #f8f9fa;
+    color: #000000;
+}
+
+[data-theme="light"] .navbar-dark {
+    background-color: #ffffff !important;
+}
+
+[data-theme="light"] .navbar-dark .nav-link {
+    color: #000000 !important;
+}
+
+[data-theme="light"] .project-card {
+    background: #ffffff;
+    border: 1px solid #dee2e6;
+}
+
+[data-theme="light"] .filter-btn {
+    background: #ffffff;
+    border: 1px solid #dee2e6;
+    color: #000000;
+}
+
+[data-theme="light"] .hero-split-section {
+    background-color: #ffffff;
+}
+
+[data-theme="light"] .hero-text-content h1,
+[data-theme="light"] .hero-text-content p {
+    color: #000000;
+}
+.btn-outline-custom {
+    border: 1px solid #20c997;
+    color: #20c997;
+    background: transparent;
+    padding: 8px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-custom:hover {
+    background: #20c997;
+    color: white;
+    transform: translateY(-2px);
+}
+/* Modal Styling for Dark Theme */
+.modal-content {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    border: 1px solid #333;
+}
+
+.modal-header {
+    border-bottom: 1px solid #333;
+}
+
+.modal-footer {
+    border-top: 1px solid #333;
+}
+
+.btn-close {
+    filter: invert(1);
+}
+
+/* Light Theme Modal Support */
+[data-theme="light"] .modal-content {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #dee2e6;
+}
+
+[data-theme="light"] .modal-header,
+[data-theme="light"] .modal-footer {
+    border-color: #dee2e6;
+}
+
+[data-theme="light"] .btn-close {
+    filter: none;
+}
+.contact-item {
+    padding: 2rem 1rem;
+    transition: all 0.3s ease;
+}
+
+.contact-item:hover {
+    transform: translateY(-5px);
+}
+
+.contact-item h5 {
+    margin-bottom: 1rem;
+    color: #20c997;
+}
+
+.contact-item p {
+    margin-bottom: 0;
+    color: #cccccc;
+}
+
+[data-theme="light"] .contact-item p {
+    color: #666666;
+}
