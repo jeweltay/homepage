@@ -5,7 +5,7 @@ A responsive, modern portfolio website built for Harvard's CS50 course, showcasi
 ## Live Demo
 [View Live Site](https://jeweltay.github.io/homepage/)
 
-## 📋 About This Project
+## About This Project
 This is my CS50 Problem Set 8 submission; a fully responsive portfolio website that demonstrates my web development skills and professional background.
 
 ## Technologies Used
